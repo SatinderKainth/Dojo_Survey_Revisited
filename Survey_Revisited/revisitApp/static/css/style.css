@@ -1,0 +1,30 @@
+h1{
+    color:blue;
+}
+h2{
+    color: purple;
+}
+#fname{
+    font-size: 25px;
+    color:purple
+}
+#locations{
+    font-size: 25px;
+    color:purple
+}
+#languages{
+    font-size: 25px;
+    color:purple
+}
+#comment{
+    font-size: 25px;
+    color:purple
+}
+#radio{
+    font-size: 20px;
+    color: purple;
+}
+#checkbox{
+    font-size: 15px;
+    color: purple;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <title>Index</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+<form action="\info" method="post">
+{% csrf_token %}
+<div id="form">
+<div><h1> Dojo Survey App </h1></div>
+<div id="fname">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+</div>
+<div id ="locations">
+    <label for ="location">Dojo Location:</label>
+    <Select name="location" id="">
+    <option id ="florida">florida</option>
+    <option id="Kent">Kent</option>
+    <option id ="bellevue">Bellevue</option>
+    <option id ="san-jose">San Jose</option>
+    <option id ="california">California</option>
+    </Select>
+</div>
+<div id ="languages">
+    <label for ="language">Favorite Languages:</label>
+    <Select name ="language" id="">
+    <option id ="html">Html</option>
+    <option id="java">Java</option>
+    <option id ="ruby">Ruby</option>
+    <option id ="python">Python</option>
+    <option id ="pearl">Pearl</option>
+    </Select>
+</div>
+<div id ="comment">
+    <label name="desc">Comment(Optional):</label>
+    <textarea name="desc"></textarea>
+</div>
+    <h2>Choose a Gender:</h2>
+<div id="radio">
+    <input type="radio" id="male" name="gender" value="male">Male
+    <!--<label for="male">Male</label>-->
+    <input type="radio" id="female" name="gender" value="female">Female
+    <!--<label for="female">Female</label>-->
+    <input type="radio" id="other" name="gender" value="others">Others
+    <!--<label for="other">Others</label>-->
+</div>
+<div id ="checkbox">
+    <h2>Programming Experience</h2>
+    <input type="checkbox" id="intermediate" name="level" value="intermediate">Intermediate
+    <input type="checkbox" id="beginner" name="level" value="beginner">Beginner
+    <input type="checkbox" id="expert" name="level" value="expert">Expert
+</div>
+<div id="btn">
+    <button type="submit">Submit</button>
+</div>
+</div>
+</form>
+</body>
+</html>
